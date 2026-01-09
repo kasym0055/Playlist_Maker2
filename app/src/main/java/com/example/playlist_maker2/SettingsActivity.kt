@@ -18,8 +18,7 @@ class SettingsActivity : AppCompatActivity() {
         val arrBack = findViewById<LinearLayout>(R.id.arr_back)
 
         arrBack.setOnClickListener {
-            val backIntent = Intent(this, MainActivity::class.java)
-            startActivity(backIntent)
+            finish()
         }
     }
 }
