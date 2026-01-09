@@ -14,19 +14,23 @@
         android:orientation="vertical"
         android:padding="@dimen/default_padding">
 
-        <FrameLayout
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="56dp">
+            android:layout_height="@dimen/default_height"
+            android:layout_marginBottom="@dimen/max_margin"
+
+            >
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/app_name"
                 android:textColor="@color/white"
-                android:textSize="@dimen/default_fontSize">
+                android:textSize="@dimen/default_fontSize"
+                android:layout_gravity="center_vertical">
 
             </TextView>
-        </FrameLayout>
+        </LinearLayout>
 
         <LinearLayout
             android:id="@+id/search_btn"
@@ -42,18 +46,18 @@
             android:foreground="?attr/selectableItemBackground">
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="@dimen/default_icon_size"
+                android:layout_height="@dimen/default_icon_size"
                 android:src="@drawable/ic_search"
                 app:tint="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
+                android:layout_marginStart="@dimen/min_margin"
                 android:text="@string/search"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="@dimen/default_fontSize" />
         </LinearLayout>
 
         <LinearLayout
@@ -61,7 +65,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/default_margin"
             android:background="@drawable/bg_rounded"
             android:clickable="true"
             android:focusable="true"
@@ -72,18 +76,18 @@
 
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="@dimen/default_icon_size"
+                android:layout_height="@dimen/default_icon_size"
                 android:src="@drawable/media"
                 app:tint="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Медиатека"
+                android:layout_marginStart="@dimen/min_margin"
+                android:text="@string/media"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="@dimen/default_fontSize" />
         </LinearLayout>
 
         <LinearLayout
@@ -91,7 +95,7 @@
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="@dimen/default_margin"
             android:background="@drawable/bg_rounded"
             android:clickable="true"
             android:focusable="true"
@@ -101,18 +105,18 @@
             android:foreground="?attr/selectableItemBackground">
 
             <ImageView
-                android:layout_width="24dp"
-                android:layout_height="24dp"
+                android:layout_width="@dimen/default_icon_size"
+                android:layout_height="@dimen/default_icon_size"
                 android:src="@drawable/settings"
                 app:tint="@color/black" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="8dp"
-                android:text="Настройки"
+                android:layout_marginStart="@dimen/min_margin"
+                android:text="@string/settings"
                 android:textColor="@color/black"
-                android:textSize="16sp" />
+                android:textSize="@dimen/default_fontSize" />
         </LinearLayout>
 
 
