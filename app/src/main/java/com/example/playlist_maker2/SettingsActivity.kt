@@ -11,7 +11,7 @@ import androidx.core.view.WindowInsetsCompat
 
 class SettingsActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 

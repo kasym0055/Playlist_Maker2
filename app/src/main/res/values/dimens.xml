@@ -2,5 +2,5 @@
 <resources>
     <dimen name="min_padding">8dp</dimen>
     <dimen name="default_padding">16dp</dimen>
-    <dimen name="default_fontSize">22sp</dimen>
+    <dimen name="default_fontSize">22sp</dimen >
 </resources>
