@@ -51,7 +51,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="@dimen/default_height"
-            android:gravity="center_vertical"
+             android:gravity="center_vertical"
             android:orientation="horizontal"
             android:padding="@dimen/default_padding"
             android:layout_marginTop="@dimen/max_margin"
