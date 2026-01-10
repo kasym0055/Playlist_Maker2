@@ -11,15 +11,14 @@ import androidx.core.view.WindowInsetsCompat
 
 class SettingsActivity : AppCompatActivity() {
     @SuppressLint("MissingInflatedId")
-    override fun onCreate(savedInstanceState: Bundle?) {
+    override fun onCreate(savedInstanceState: Bundle?)  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_settings)
 
         val arrBack = findViewById<LinearLayout>(R.id.arr_back)
 
         arrBack.setOnClickListener {
-            val backIntent = Intent(this, MainActivity::class.java)
-            startActivity(backIntent)
+            finish()
         }
     }
 }

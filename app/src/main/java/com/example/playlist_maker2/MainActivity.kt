@@ -21,7 +21,7 @@ class MainActivity : AppCompatActivity() {
         val settingBtn= findViewById<LinearLayout>(R.id.settings_btn)
 
 
-        searchBtn.setOnClickListener {
+        searchBtn.setOnClickListener  {
             val searchIntent= Intent(this, SearchActivity::class.java)
             startActivity(searchIntent)
         }
