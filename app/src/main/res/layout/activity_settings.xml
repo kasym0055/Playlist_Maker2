@@ -27,11 +27,11 @@
                 android:focusable="true"
                 android:foreground="?attr/selectableItemBackground"
                 >
+
                 <ImageView
                     android:layout_width="@dimen/min_icon_size"
                     android:layout_height="@dimen/min_icon_size"
-                    android:src="@drawable/ic_back_arrow_24"
-                    />
+                    android:src="@drawable/ic_back_arrow_24" />
             </LinearLayout>
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -41,9 +41,10 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:textColor="@color/yp_black"
                     android:text="@string/settings"
                     android:textSize="@dimen/default_fontSize"
-                    android:paddingTop="@dimen/padding_10"/>
+                    android:gravity="center_vertical"/>
             </LinearLayout>
 
         </LinearLayout>
@@ -58,6 +59,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="@string/dark_theme_text"/>
 
             <com.google.android.material.switchmaterial.SwitchMaterial
@@ -80,6 +82,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/share_app_text"
+                android:textColor="@color/black"
                 android:layout_weight="1"/>
 
             <ImageView
@@ -101,6 +104,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="@string/writeTo_support"
                 android:layout_weight="1"/>
 
@@ -122,6 +126,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:textColor="@color/black"
                 android:text="@string/user_agreement_text"
                 android:layout_weight="1"/>
 
