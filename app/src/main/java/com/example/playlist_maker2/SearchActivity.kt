@@ -59,7 +59,7 @@ class SearchActivity : AppCompatActivity() {
 
         }
 
-        editTextSearch.addTextChangedListener(textWatcherSearch)
+        editTextSearch.addTextChangedListener(textWatcherSearch )
     }
 
     override fun onSaveInstanceState(outState: Bundle) {
