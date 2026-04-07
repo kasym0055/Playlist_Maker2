@@ -35,56 +35,35 @@
             </TextView>
         </LinearLayout>
 
-        <LinearLayout
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/search_btn"
-            style="@style/cardsMainScreen">
+            style="@style/MainScreenButton"
+            android:text="@string/search"
+            android:textColor="@color/black"
+            app:icon="@drawable/ic_search"
+            app:iconTint="@color/black"
+            app:iconPadding="@dimen/default_margin"
+            app:iconGravity="textStart"
+            />
 
-            <ImageView
-                android:layout_width="@dimen/default_icon_size"
-                android:layout_height="@dimen/default_icon_size"
-                android:src="@drawable/ic_search"
-                app:tint="@color/black" />
 
-            <TextView
-                android:text="@string/search"
-                style="@style/cardsTextStyle" />
-        </LinearLayout>
-
-        <LinearLayout
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/media_btn"
             android:layout_marginTop="@dimen/default_margin"
-            style="@style/cardsMainScreen">
+            style="@style/MainScreenButton"
+            android:text="@string/media"
+            android:textColor="@color/black"
+            app:icon="@drawable/media"
+            />
 
-
-            <ImageView
-                android:layout_width="@dimen/default_icon_size"
-                android:layout_height="@dimen/default_icon_size"
-                android:src="@drawable/media"
-                app:tint="@color/black" />
-
-            <TextView
-                android:text="@string/media"
-                style="@style/cardsTextStyle"/>
-        </LinearLayout>
-
-        <LinearLayout
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/settings_btn"
             android:layout_marginTop="@dimen/default_margin"
-            style="@style/cardsMainScreen">
-
-            <ImageView
-                android:layout_width="@dimen/default_icon_size"
-                android:layout_height="@dimen/default_icon_size"
-                android:src="@drawable/settings"
-                app:tint="@color/black" />
-
-            <TextView
-                android:text="@string/settings"
-                style="@style/cardsTextStyle"
-                 />
-        </LinearLayout>
-
-
+            style="@style/MainScreenButton"
+            android:text="@string/settings"
+            android:textColor="@color/black"
+            app:icon="@drawable/settings"
+            />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

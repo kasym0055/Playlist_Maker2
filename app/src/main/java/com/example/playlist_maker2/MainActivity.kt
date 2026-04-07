@@ -14,15 +14,16 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.google.android.material.button.MaterialButton
 
 class MainActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        val searchBtn = findViewById<LinearLayout>(R.id.search_btn)
-        val mediaBtn =findViewById<LinearLayout>(R.id.media_btn)
-        val settingBtn= findViewById<LinearLayout>(R.id.settings_btn)
+        val searchBtn = findViewById<MaterialButton>(R.id.search_btn)
+        val mediaBtn =findViewById<MaterialButton>(R.id.media_btn)
+        val settingBtn= findViewById<MaterialButton>(R.id.settings_btn)
 
 
         searchBtn.setOnClickListener  {

@@ -7,6 +7,7 @@ import android.text.TextWatcher
 import android.view.View
 import android.widget.EditText
 import android.widget.ImageView
+import android.widget.LinearLayout
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -20,8 +21,13 @@ class SearchActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?)  {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.search_page)
+        val arrBack = findViewById<LinearLayout>(R.id.arr_back)
         val editTextSearch = findViewById<EditText>(R.id.etSearch)
         val clearText = findViewById<ImageView>(R.id.clear_text)
+
+        arrBack.setOnClickListener {
+            finish()
+        }
 
         clearText.setOnClickListener {
             editTextSearch.setText("")
